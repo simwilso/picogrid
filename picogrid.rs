@@ -1,3 +1,4 @@
+
 use rust_gpiozero::*;
 use std::thread::sleep;
 use std::time::Duration;
@@ -51,13 +52,24 @@ fn main() {
 
         sleep(Duration::from_secs(1));
         sys1_solar.on();
+        sleep(Duration::from_secs(1));
+        sys1_solar.off();
+        sleep(Duration::from_secs(1));
         sys1_battery.on();
         sleep(Duration::from_secs(1));
+        sys1_battery.off();
+        sleep(Duration::from_secs(1));
         sys2_solar.on();
+        sleep(Duration::from_secs(1));
+        sys2_solar.off();
+        sleep(Duration::from_secs(1));
         sys2_battery.on();
+        sleep(Duration::from_secs(1));
+        sys2_battery.off();
         
     }
 
 
 
 }
+
