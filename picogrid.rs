@@ -19,6 +19,21 @@ fn main() {
     let sys2_solar = LED::new(14); //14
     let sys2_battery = LED::new(26); //26
 
+    /*
+    
+    //user inputs a value at which generation goes on sale
+    //user inputs up a value at that their home typically consumes
+    //users inputs a capacity in their battery
+    //user sets up a generation script that will run 10 entries 
+ 
+    //if generation is above sell rate the solar led will flash fast
+    //if generation is above consumption but below sell that users battery will charge (flash solid)
+    //if once that users battery capacity hits 100% the neighbourhood battery will begin flashing solid
+     
+    //when generation goes above sell mark 
+    
+    */
+    
     loop {
         hm1_solar.on();
         hm1_battery.on();
